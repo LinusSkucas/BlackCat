@@ -7,20 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		153239412599A0D600496C4C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153239402599A0D600496C4C /* AppDelegate.swift */; };
+		153239412599A0D600496C4C /* BlackCatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153239402599A0D600496C4C /* BlackCatApp.swift */; };
 		153239432599A0D600496C4C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153239422599A0D600496C4C /* ContentView.swift */; };
 		153239452599A0D700496C4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 153239442599A0D700496C4C /* Assets.xcassets */; };
 		153239482599A0D700496C4C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 153239472599A0D700496C4C /* Preview Assets.xcassets */; };
-		1532394B2599A0D700496C4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 153239492599A0D700496C4C /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1532393D2599A0D600496C4C /* Black Cat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Black Cat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		153239402599A0D600496C4C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		153239402599A0D600496C4C /* BlackCatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackCatApp.swift; sourceTree = "<group>"; };
 		153239422599A0D600496C4C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		153239442599A0D700496C4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		153239472599A0D700496C4C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		1532394A2599A0D700496C4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1532394C2599A0D700496C4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1532394D2599A0D700496C4C /* Black_Cat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Black_Cat.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -55,10 +53,9 @@
 		1532393F2599A0D600496C4C /* Black Cat */ = {
 			isa = PBXGroup;
 			children = (
-				153239402599A0D600496C4C /* AppDelegate.swift */,
+				153239402599A0D600496C4C /* BlackCatApp.swift */,
 				153239422599A0D600496C4C /* ContentView.swift */,
 				153239442599A0D700496C4C /* Assets.xcassets */,
-				153239492599A0D700496C4C /* Main.storyboard */,
 				1532394C2599A0D700496C4C /* Info.plist */,
 				1532394D2599A0D700496C4C /* Black_Cat.entitlements */,
 				153239462599A0D700496C4C /* Preview Content */,
@@ -132,7 +129,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1532394B2599A0D700496C4C /* Main.storyboard in Resources */,
 				153239482599A0D700496C4C /* Preview Assets.xcassets in Resources */,
 				153239452599A0D700496C4C /* Assets.xcassets in Resources */,
 			);
@@ -167,22 +163,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				153239432599A0D600496C4C /* ContentView.swift in Sources */,
-				153239412599A0D600496C4C /* AppDelegate.swift in Sources */,
+				153239412599A0D600496C4C /* BlackCatApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		153239492599A0D700496C4C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1532394A2599A0D700496C4C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		1532394E2599A0D700496C4C /* Debug */ = {
@@ -309,7 +294,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Black Cat/Preview Content\"";
-				DEVELOPMENT_TEAM = 39UWSCXL32;
+				DEVELOPMENT_TEAM = P6PV2R9443;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Black Cat/Info.plist";
@@ -318,7 +303,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "sh.linus.Black-Cat";
+				PRODUCT_BUNDLE_IDENTIFIER = "ssh.linus.Black-Cat";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -333,7 +318,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Black Cat/Preview Content\"";
-				DEVELOPMENT_TEAM = 39UWSCXL32;
+				DEVELOPMENT_TEAM = P6PV2R9443;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Black Cat/Info.plist";
@@ -342,7 +327,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "sh.linus.Black-Cat";
+				PRODUCT_BUNDLE_IDENTIFIER = "ssh.linus.Black-Cat";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
