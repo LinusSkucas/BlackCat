@@ -8,9 +8,12 @@ import SwiftUI
 
 @main
 struct BlackCatApp: App {
+    @StateObject var userData = UserData()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(userData)
         }
     }
 }

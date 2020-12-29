@@ -3,17 +3,24 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		150A94CD259A7F9F00E0AECE /* URL+Deeplinking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150A94CC259A7F9F00E0AECE /* URL+Deeplinking.swift */; };
+		150A94D1259A83AF00E0AECE /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 150A94D0259A83AF00E0AECE /* Alamofire */; };
 		153239412599A0D600496C4C /* BlackCatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153239402599A0D600496C4C /* BlackCatApp.swift */; };
 		153239432599A0D600496C4C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153239422599A0D600496C4C /* ContentView.swift */; };
 		153239452599A0D700496C4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 153239442599A0D700496C4C /* Assets.xcassets */; };
 		153239482599A0D700496C4C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 153239472599A0D700496C4C /* Preview Assets.xcassets */; };
+		1535E573259A5A82003BE0FC /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 1535E572259A5A82003BE0FC /* KeychainAccess */; };
+		1535E578259A5EFB003BE0FC /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1535E577259A5EFB003BE0FC /* UserData.swift */; };
+		1535E57B259A5FA0003BE0FC /* AuthSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1535E57A259A5FA0003BE0FC /* AuthSheetView.swift */; };
+		15520557259A590E008541CF /* TokenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15520556259A590E008541CF /* TokenManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		150A94CC259A7F9F00E0AECE /* URL+Deeplinking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Deeplinking.swift"; sourceTree = "<group>"; };
 		1532393D2599A0D600496C4C /* Black Cat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Black Cat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		153239402599A0D600496C4C /* BlackCatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackCatApp.swift; sourceTree = "<group>"; };
 		153239422599A0D600496C4C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -21,6 +28,9 @@
 		153239472599A0D700496C4C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1532394C2599A0D700496C4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1532394D2599A0D700496C4C /* Black_Cat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Black_Cat.entitlements; sourceTree = "<group>"; };
+		1535E577259A5EFB003BE0FC /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		1535E57A259A5FA0003BE0FC /* AuthSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthSheetView.swift; sourceTree = "<group>"; };
+		15520556259A590E008541CF /* TokenManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,12 +38,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1535E573259A5A82003BE0FC /* KeychainAccess in Frameworks */,
+				150A94D1259A83AF00E0AECE /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		150A94CB259A7F8B00E0AECE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				150A94CC259A7F9F00E0AECE /* URL+Deeplinking.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		153239342599A0D600496C4C = {
 			isa = PBXGroup;
 			children = (
@@ -55,6 +75,10 @@
 			children = (
 				153239402599A0D600496C4C /* BlackCatApp.swift */,
 				153239422599A0D600496C4C /* ContentView.swift */,
+				1535E57A259A5FA0003BE0FC /* AuthSheetView.swift */,
+				1535E577259A5EFB003BE0FC /* UserData.swift */,
+				15520556259A590E008541CF /* TokenManager.swift */,
+				150A94CB259A7F8B00E0AECE /* Extensions */,
 				153239442599A0D700496C4C /* Assets.xcassets */,
 				1532394C2599A0D700496C4C /* Info.plist */,
 				1532394D2599A0D700496C4C /* Black_Cat.entitlements */,
@@ -88,6 +112,10 @@
 			dependencies = (
 			);
 			name = "Black Cat";
+			packageProductDependencies = (
+				1535E572259A5A82003BE0FC /* KeychainAccess */,
+				150A94D0259A83AF00E0AECE /* Alamofire */,
+			);
 			productName = "Black Cat";
 			productReference = 1532393D2599A0D600496C4C /* Black Cat.app */;
 			productType = "com.apple.product-type.application";
@@ -115,6 +143,10 @@
 				Base,
 			);
 			mainGroup = 153239342599A0D600496C4C;
+			packageReferences = (
+				1535E571259A5A82003BE0FC /* XCRemoteSwiftPackageReference "KeychainAccess" */,
+				150A94CF259A83AF00E0AECE /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 1532393E2599A0D600496C4C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -153,7 +185,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "#!/bin/bash\nbuildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"$INFOPLIST_FILE\")\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"$INFOPLIST_FILE\"\n";
+			shellScript = "#!/bin/bash\nif [ $ENABLE_PREVIEWS == \"NO\" ]\nthen\n    buildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"$INFOPLIST_FILE\")\n    buildNumber=$(($buildNumber + 1))\n    /usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"$INFOPLIST_FILE\"\nelse\n    echo \"Skipping build increment script because of preview mode\"\nfi\n\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -162,7 +194,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1535E57B259A5FA0003BE0FC /* AuthSheetView.swift in Sources */,
 				153239432599A0D600496C4C /* ContentView.swift in Sources */,
+				15520557259A590E008541CF /* TokenManager.swift in Sources */,
+				1535E578259A5EFB003BE0FC /* UserData.swift in Sources */,
+				150A94CD259A7F9F00E0AECE /* URL+Deeplinking.swift in Sources */,
 				153239412599A0D600496C4C /* BlackCatApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -303,7 +339,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "ssh.linus.Black-Cat";
+				PRODUCT_BUNDLE_IDENTIFIER = sh.linus.BlackCat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -327,7 +363,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "ssh.linus.Black-Cat";
+				PRODUCT_BUNDLE_IDENTIFIER = sh.linus.BlackCat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -355,6 +391,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		150A94CF259A83AF00E0AECE /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.1;
+			};
+		};
+		1535E571259A5A82003BE0FC /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.2.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		150A94D0259A83AF00E0AECE /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 150A94CF259A83AF00E0AECE /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		1535E572259A5A82003BE0FC /* KeychainAccess */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1535E571259A5A82003BE0FC /* XCRemoteSwiftPackageReference "KeychainAccess" */;
+			productName = KeychainAccess;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 153239352599A0D600496C4C /* Project object */;
 }
