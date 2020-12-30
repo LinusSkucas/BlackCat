@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		150A94CD259A7F9F00E0AECE /* URL+Deeplinking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150A94CC259A7F9F00E0AECE /* URL+Deeplinking.swift */; };
 		150A94D1259A83AF00E0AECE /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 150A94D0259A83AF00E0AECE /* Alamofire */; };
+		151C9390259D306A005D542E /* MeowServiceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151C938F259D306A005D542E /* MeowServiceDelegate.swift */; };
+		151C9392259D306A005D542E /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151C9391259D306A005D542E /* main.swift */; };
+		151C9396259D306A005D542E /* MeowService.xpc in Embed XPC Services */ = {isa = PBXBuildFile; fileRef = 151C938B259D306A005D542E /* MeowService.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		151C93A1259D30DE005D542E /* MeowService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151C938E259D306A005D542E /* MeowService.swift */; };
+		151C93A4259D30E0005D542E /* MeowServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151C938D259D306A005D542E /* MeowServiceProtocol.swift */; };
 		153239412599A0D600496C4C /* BlackCatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153239402599A0D600496C4C /* BlackCatApp.swift */; };
 		153239432599A0D600496C4C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153239422599A0D600496C4C /* ContentView.swift */; };
 		153239452599A0D700496C4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 153239442599A0D700496C4C /* Assets.xcassets */; };
@@ -19,8 +24,39 @@
 		15520557259A590E008541CF /* TokenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15520556259A590E008541CF /* TokenManager.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		151C9394259D306A005D542E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 153239352599A0D600496C4C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 151C938A259D306A005D542E;
+			remoteInfo = MeowService;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		151C9397259D306A005D542E /* Embed XPC Services */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/XPCServices";
+			dstSubfolderSpec = 16;
+			files = (
+				151C9396259D306A005D542E /* MeowService.xpc in Embed XPC Services */,
+			);
+			name = "Embed XPC Services";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		150A94CC259A7F9F00E0AECE /* URL+Deeplinking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Deeplinking.swift"; sourceTree = "<group>"; };
+		151C938B259D306A005D542E /* MeowService.xpc */ = {isa = PBXFileReference; explicitFileType = "wrapper.xpc-service"; includeInIndex = 0; path = MeowService.xpc; sourceTree = BUILT_PRODUCTS_DIR; };
+		151C938D259D306A005D542E /* MeowServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeowServiceProtocol.swift; sourceTree = "<group>"; };
+		151C938E259D306A005D542E /* MeowService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeowService.swift; sourceTree = "<group>"; };
+		151C938F259D306A005D542E /* MeowServiceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeowServiceDelegate.swift; sourceTree = "<group>"; };
+		151C9391259D306A005D542E /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		151C9393259D306A005D542E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		151C93A7259D3103005D542E /* MeowService.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MeowService.entitlements; sourceTree = "<group>"; };
 		1532393D2599A0D600496C4C /* Black Cat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Black Cat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		153239402599A0D600496C4C /* BlackCatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackCatApp.swift; sourceTree = "<group>"; };
 		153239422599A0D600496C4C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -34,6 +70,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		151C9388259D306A005D542E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1532393A2599A0D600496C4C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -54,10 +97,24 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		151C938C259D306A005D542E /* MeowService */ = {
+			isa = PBXGroup;
+			children = (
+				151C93A7259D3103005D542E /* MeowService.entitlements */,
+				151C938D259D306A005D542E /* MeowServiceProtocol.swift */,
+				151C938E259D306A005D542E /* MeowService.swift */,
+				151C938F259D306A005D542E /* MeowServiceDelegate.swift */,
+				151C9391259D306A005D542E /* main.swift */,
+				151C9393259D306A005D542E /* Info.plist */,
+			);
+			path = MeowService;
+			sourceTree = "<group>";
+		};
 		153239342599A0D600496C4C = {
 			isa = PBXGroup;
 			children = (
 				1532393F2599A0D600496C4C /* Black Cat */,
+				151C938C259D306A005D542E /* MeowService */,
 				1532393E2599A0D600496C4C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -66,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				1532393D2599A0D600496C4C /* Black Cat.app */,
+				151C938B259D306A005D542E /* MeowService.xpc */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -98,6 +156,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		151C938A259D306A005D542E /* MeowService */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 151C939A259D306A005D542E /* Build configuration list for PBXNativeTarget "MeowService" */;
+			buildPhases = (
+				151C9387259D306A005D542E /* Sources */,
+				151C9388259D306A005D542E /* Frameworks */,
+				151C9389259D306A005D542E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MeowService;
+			productName = MeowService;
+			productReference = 151C938B259D306A005D542E /* MeowService.xpc */;
+			productType = "com.apple.product-type.xpc-service";
+		};
 		1532393C2599A0D600496C4C /* Black Cat */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 153239502599A0D700496C4C /* Build configuration list for PBXNativeTarget "Black Cat" */;
@@ -106,10 +181,12 @@
 				153239392599A0D600496C4C /* Sources */,
 				1532393A2599A0D600496C4C /* Frameworks */,
 				1532393B2599A0D600496C4C /* Resources */,
+				151C9397259D306A005D542E /* Embed XPC Services */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				151C9395259D306A005D542E /* PBXTargetDependency */,
 			);
 			name = "Black Cat";
 			packageProductDependencies = (
@@ -129,6 +206,9 @@
 				LastSwiftUpdateCheck = 1230;
 				LastUpgradeCheck = 1230;
 				TargetAttributes = {
+					151C938A259D306A005D542E = {
+						CreatedOnToolsVersion = 12.3;
+					};
 					1532393C2599A0D600496C4C = {
 						CreatedOnToolsVersion = 12.3;
 					};
@@ -152,11 +232,19 @@
 			projectRoot = "";
 			targets = (
 				1532393C2599A0D600496C4C /* Black Cat */,
+				151C938A259D306A005D542E /* MeowService */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		151C9389259D306A005D542E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1532393B2599A0D600496C4C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -190,6 +278,17 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		151C9387259D306A005D542E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				151C9392259D306A005D542E /* main.swift in Sources */,
+				151C93A1259D30DE005D542E /* MeowService.swift in Sources */,
+				151C9390259D306A005D542E /* MeowServiceDelegate.swift in Sources */,
+				151C93A4259D30E0005D542E /* MeowServiceProtocol.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		153239392599A0D600496C4C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -205,7 +304,55 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		151C9395259D306A005D542E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 151C938A259D306A005D542E /* MeowService */;
+			targetProxy = 151C9394259D306A005D542E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		151C9398259D306A005D542E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = MeowService/MeowService.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = P6PV2R9443;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = MeowService/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../../../../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sh.linus.BlackCat.xpc.MeowService;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "\"\"";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		151C9399259D306A005D542E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = MeowService/MeowService.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = P6PV2R9443;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = MeowService/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../../../../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sh.linus.BlackCat.xpc.MeowService;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "\"\"";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		1532394E2599A0D700496C4C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -372,6 +519,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		151C939A259D306A005D542E /* Build configuration list for PBXNativeTarget "MeowService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				151C9398259D306A005D542E /* Debug */,
+				151C9399259D306A005D542E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		153239382599A0D600496C4C /* Build configuration list for PBXProject "Black Cat" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
